@@ -27,26 +27,45 @@
 	<!-- Place your JavaScript code here -->
 	<script>
 		/*
+		In the script element, add a multi-line comment with Author=<your name> and Class=IT-2320 on separate lines.
 		Author = "Brandon Alerte"
 		Class = "IT-2320"
 		*/
+
+		//Create a variable called name using let and assign your full name to it.
 		let name = "Brandon Alerte";
+		
+		//Use document.write() to output "Lab 1. Completed by " and your name variable using string concatenation.
 		document.write("Lab 1. Completed by " + name);
+
+		//Use console.log() to output "Note: Lab 1. Completed by " + name.
 		console.log("Note: Lab.1 Completed by " + name);
+
+		//Output the value "innerHTML value set" in div with id="output" using document.getElementById('').innerHTML.
 		document.getElementById("output").innerHTML = "innerHTML value set";
+
+		//Add a for loop that outputs all values from 1-10. Use document.getElementById().innerHTML to output the value to the div with id="values".
+		//You must output all 10 values using the loop (not a single output statement). Separate each value with an HTML <br> element.
 		for (let i = 0; i < 9; i++) {
 			document.getElementById("values").innerHTML = " " + i  + "<br>";
 		}
+		
+		//Add a while loop that adds all values from 1-10 together as a sum. Use document.getElementById('').innerHTML to output the sum value to the div with id="sum".
 		let i = 0;
 		let sum = 0;
 		while (i < 9){
 			sum += i;
+			i++;
 		}
 		document.getElementById("sum").innerHTML = sum;
+
+		//Create 3 numeric variables a, b, and c. Assign values to them. Output their sum using a document.write() statement followed by a <br> element for spacing.
 		let a = 67;
 		let b = 1337;
 		let c = 21;
 		document.write(a + b + c + "<br>");
+
+		//Use a condition to compare variables a and b. Output "a < b" or "a > b" using a document.write() statement.
 		if (a > b){
 			document.write("a > b");
 		} else {
